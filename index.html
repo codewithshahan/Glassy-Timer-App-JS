@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beautiful Glass Timer App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glass-container">
+        <input type="number" id="minutesInput" placeholder="Minutes">
+        <input type="number" id="secondsInput" placeholder="Seconds">
+        <div class="button-container">
+            <button class="glass-button" onclick="incrementTime('minutes', 1)">↑</button>
+            <button class="glass-button" onclick="decrementTime('minutes', 1)">↓</button>
+            <button class="glass-button" onclick="incrementTime('seconds', 1)">↑</button>
+            <button class="glass-button" onclick="decrementTime('seconds', 1)">↓</button>
+        </div>
+        <button class="glass-button" onclick="startTimer()">Start</button>
+        <button class="glass-button" onclick="stopTimer()">Stop</button>
+        <button class="glass-button" onclick="resetTimer()">Reset</button>
+        <div id="display">Time: 00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
